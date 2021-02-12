@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>SpringStudy</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>Spring01-ioc1</module>
+        <module>Spring02-helloworld</module>
+        <module>Spring03-ioc2</module>
+        <module>SpringStudy04-di</module>
+        <module>Spring05-Autowired</module>
+        <module>spring06-anno</module>
+        <module>Spring-07-appconfig</module>
+        <module>Spring08-proxy</module>
+        <module>Spring09-aop</module>
+        <module>Spring10-mybatis</module>
+        <module>Spring11-transaction</module>
+    </modules>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+  <dependencies>
+      <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-webmvc</artifactId>
+          <version>5.2.8.RELEASE</version>
+      </dependency>
+
+
+
+  </dependencies>
+
+</project>

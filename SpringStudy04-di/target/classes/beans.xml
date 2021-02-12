@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="address" class="com.lzh.pojo.Address">
+    <property name="address" value="吉安"/>
+</bean>
+
+<bean id="student" class="com.lzh.pojo.Student">
+<!--        first ordinary value method-->
+    <property name="name" value="倾城"/>
+
+<!--    second bean   ref   method-->
+    <property name="address" ref="address"/>
+
+<!--    array-->
+    <property name="books">
+        <array>
+            <value>红楼梦</value>
+            <value>西游记</value>
+            <value>水浒传</value>
+            <value>三国演义</value>
+        </array>
+    </property>
+
+<!--    list-->
+
+    <property name="hobbies">
+        <list>
+            <value>听歌</value>
+            <value>跳舞</value>
+            <value>篮球</value>
+        </list>
+    </property>
+
+<!--    Map-->
+    <property name="card">
+        <map>
+            <entry key="身份证" value="12345678"/>
+            <entry key="手机号" value="1234567890"/>
+        </map>
+    </property>
+
+<!--    set-->
+    <property name="games">
+        <set>
+            <value>LOL</value>
+            <value>CR</value>
+            <value>COC</value>
+        </set>
+    </property>
+
+
+    <!--null-->
+    <property name="wife">
+          <null/>
+    </property>
+
+    <property name="info">
+        <props>
+            <prop key="driver">2020815</prop>
+            <prop key="url">男</prop>
+            <prop key="username">root</prop>
+            <prop key="password">123456</prop>
+        </props>
+    </property>
+</bean>
+
+
+</beans>
